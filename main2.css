@@ -1,0 +1,90 @@
+body {
+        padding:0px;
+        background:#d18f00 url(http://www.csszengarden.com/059/decosides.gif) no-repeat 50% 0%;
+        color:#946500;
+        font-family:arial,helvetica,sans-serif;
+        font-size:12px;
+        text-align:center; /* so the container div centers itself in IE5/win */
+        display: flex;
+        justify-content: center;
+}
+
+div.page-wrapper{
+    width: 60em;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-evenly;
+    background:url(http://www.csszengarden.com/059/main_top.png) no-repeat 0% 0%;
+    position:relative;
+}
+
+header{
+    text-align:center;
+}
+
+header h1,header h2{
+    text-transform:lowercase;
+    margin: auto;
+    font-family:arial,helvetica,sans-serif; /* being verbose because font shorthand caused IE5/win to botch */
+    font-size:10px;
+    font-weight:normal;
+    letter-spacing:8px;
+    }
+
+    div.preamble,div.explanation,div.participation,div.benefits,div.requirements,footer{
+        color:#CFA343;
+        text-align:justify;
+        padding-left: 3em;
+        height: 20em;
+        width: 25em;
+    }
+div.page-wrapper p,div.page-wrapper h3{
+    align-self: auto;
+}
+
+
+div.summary{
+    display: flex;    
+    flex-flow: column;
+    padding-top: 6.8em;
+    padding-left: 6.5em;
+    color:#E8B74B;
+    background:url(http://www.csszengarden.com/059/sides.png) no-repeat 3em 13em;
+    text-align: justify;
+}    
+
+div.summary p{
+    justify-content: center;
+    width: 25em;
+    flex-wrap: wrap;
+    margin: 0;
+}
+    
+div.summary p:first-child{
+    font-weight:bold;
+    padding-top: 6em;
+}
+
+div.summary p:last-child{
+    text-transform:lowercase;
+}
+    
+div.summary p:before{
+    content:"::: ";
+    font-family:verdana,sans-serif;
+    color:#B68F3B;
+    font-weight:bold;
+    padding-top: 6em;
+    }
+    
+div.summary p:after{
+    content:" :::";
+    font-family:verdana,sans-serif;
+    color:#B68F3B;
+    font-weight:bold;
+}
+
+div.benefits h3{
+    padding: 4em;
+}

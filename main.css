@@ -1,0 +1,279 @@
+body{
+    
+    padding:0px;
+    background:#d18f00 url(http://www.csszengarden.com/059/decosides.gif) no-repeat 50% 0%;
+    color:#946500;
+    font-family:arial,helvetica,sans-serif;
+    font-size:12px;
+    text-align:center; /* so the container div centers itself in IE5/win */
+    display: flex;
+    justify-content: center;
+    }
+    a:link{
+    color:#EFD396;
+    text-decoration:none;
+    }
+    a:visited{
+    color:#EFD396;
+    text-decoration:none;
+    }
+    a:hover{
+    color:#EFD396;
+    text-decoration:underline;
+    }
+    a:active{
+    color:#EFD396;
+    text-decoration:none;
+    }
+    
+    abbr{
+    border:none;
+    cursor:help;
+    font-family:georgia,serif;
+    }
+    
+    div.page-wrapper{
+    width: 60em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background:url(http://www.csszengarden.com/059/main_top.png) no-repeat 0% 0%;
+    position:relative;
+    }
+    
+    header{
+    text-align:center;
+    }
+    
+    header h1,header h2{
+    text-transform:lowercase;
+    margin: auto;
+    font-family:arial,helvetica,sans-serif; /* being verbose because font shorthand caused IE5/win to botch */
+    font-size:10px;
+    font-weight:normal;
+    letter-spacing:8px;
+    }
+    
+    header h1:after{
+    content:":"; /* ignored by IE */
+    }
+    
+    div.summary,div.preamble,div.explanation,div.participation,div.benefits,div.requirements,footer{
+    color:#CFA343;
+    flex: 1 0 25%;
+    padding:0px 325px 0px 27px;
+    text-align:justify;
+    align-self: auto;
+    }
+    
+    div.page-wrapper p,div.page-wrapper h3{
+        align-self: auto;
+    }
+    
+    div.page-wrapper .intro h3,div.page-wrapper .supporting h3{
+    color:#EFD396;
+    font:bold 12px verdana,sans-serif;
+    }
+    
+    div.page-wrapper .intro h3{
+    background:url(headerbg.png) no-repeat right top;
+    }
+    
+    html>body div.page-wrapper .supporting h3{ /* IE/win bug workaround */
+    padding:2px 5px 3px 5px;
+    background:url(headerbg.png) no-repeat right top;
+    }
+    
+    div.summary{
+    display: flex;    
+    flex-flow: column;
+    color:#E8B74B;
+    background:url(http://www.csszengarden.com/059/sides.png) no-repeat 3em 13em;
+    padding-top: 6em;
+}
+    
+    div.summary p{
+    
+    }
+    
+    div.summary p:first-child{
+    font-weight:bold;
+    width: 25em;
+    }
+
+    
+    div.summary p:last-child{
+    text-transform:lowercase;
+    margin-bottom:0px;
+    padding-bottom:10px;
+    }
+    
+    div.summary p:before{
+    content:"::: ";
+    font-family:verdana,sans-serif;
+    color:#B68F3B;
+    font-weight:bold;
+    }
+    
+    div.summary p:after{
+    content:" :::";
+    font-family:verdana,sans-serif;
+    color:#B68F3B;
+    font-weight:bold;
+    }
+    
+    div.preamble{
+    display: flex;
+    padding:0px;
+    margin:0px 310px 0px 27px;
+    height:259px;
+    overflow:auto;
+    voice-family: "\"}\"";
+    voice-family: inherit;
+    margin-right:325px;
+    }
+    
+    .sidebar {
+        justify-content: right;
+        flex-wrap: wrap-reverse;
+
+
+    }
+
+    
+    .supporting{
+    background:url(http://www.csszengarden.com/059/main_middle.png) repeat-y;
+    }
+    
+    footer{
+    justify-content: flex-end;
+    background:#d18f00 url(http://www.csszengarden.com/059/main_bottom.png) no-repeat;
+    text-align:center;
+    }
+    
+    footer a{font:bold 12px verdana,sans-serif;}
+    footer a:after,footer a:before{color:#b68f3b;content:":";}
+    
+    div.design-selection{
+    flex: 0 0 25%;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
+    }
+    
+    div.design-selection h3{
+    color:#7A5300;
+    background:transparent;
+    font-size:14px;
+    height:14px;
+    margin:0px;
+    }
+    
+    div.design-selection ul{
+    list-style:none;
+    padding: 0px 0px 71px 0px;
+    margin: 59px 0px 0px 0px;
+
+    }
+    
+    div.design-selection ul li{
+    text-align:right;
+    color:#fc0;
+    font:normal 9px arial,helvetica,sans-serif;
+    height:25px;
+    margin-top:2px;
+    height:14px;
+    padding: 6px 5px 5px 5px;
+    margin-top:5px;
+    justify-content: right;
+    align-self: flex-end;
+}
+    
+    div.design-selection ul a:link{
+    color:#EFD396;
+    text-decoration:underline;
+    }
+    div.design-selection ul a:visited{
+    color:#C89D40;
+    text-decoration:underline;
+    }
+    div.design-selection ul a:hover{
+    color:#EFD396;
+    text-decoration:none;
+    }
+    div.design-selection ul a:active{
+    color:#ff0;
+    text-decoration:underline;
+    }
+    
+    div.design-archives{
+    text-align: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+
+    }
+    
+    div.zen-resources{
+    position:absolute;
+    left:438px;
+    top:658px;
+    width:279px;
+    }
+    
+    div#lfavorites{
+    position:absolute;
+    left:438px;
+    top:843px;
+    width:279px;
+    z-index:100;
+    }
+    
+    div.design-archives h3,div.zen-resources h3,div#lfavorites h3{
+    margin:0px;
+    text-align:right;
+    padding:0px 7px 17px 0px;
+    background:url(list_top.png) no-repeat 100% 100%;
+    color:#cfa343;
+    font-size:14px;
+    }
+    
+    div.design-archives ul,div.zen-resources ul,div#lfavorites ul{
+    display: flex;        
+    list-style:none;
+    padding:0px;
+    margin:0px;
+    padding-bottom:8px;
+    }
+    
+    div.design-archives li,div.zen-resources li,div#lfavorites li{
+    display: flex;
+    text-align:right;
+    padding: 5px 9px 5px 5px;
+    margin-bottom:2px;
+    color:#fc0;
+    font:bold 11px arial,helvetica,sans-serif;
+    margin:0px 0px 5px 0px;
+    }
+
+    
+    div.design-archives ul a:link,div.zen-resources ul a:link,div#lfavorites ul a:link{
+    color:#EFD396;
+    text-decoration:underline;
+    }
+    div.design-archives ul a:visited,div.zen-resources ul a:visited,div#lfavorites ul a:visited{
+    color:#C89D40;
+    text-decoration:underline;
+    }
+    div.design-archives ul a:hover,div.zen-resources ul a:hover,div#lfavorites ul a:hover{
+    color:#EFD396;
+    text-decoration:none;
+    }
+    div.design-archives ul a:active,div.zen-resources ul a:active,div#lfavorites ul a:active{
+    color:#ff0;
+    text-decoration:underline;
+    }
+    
+    div#lfavorites ul{
+    padding-bottom:69px;
+    background:url(list_bottom.png) no-repeat 100% 100%;
+    }
